@@ -1,4 +1,4 @@
-input .mood[type=checkbox] {
+.mood input[type=checkbox] {
   -webkit-appearance: none;
   background: url(http://7xpvnv.com2.z0.glb.qiniucdn.com/b6dcd011-23cc-4d95-9e51-9f10100103bd.png) 0 0 no-repeat;
   display:inline-block;
@@ -9,7 +9,7 @@ input .mood[type=checkbox] {
   outline:none;
 }
 
-input .mood[type=checkbox]:checked {
+.mood input[type=checkbox]:checked {
   -webkit-appearance: none;
   background: url(http://7xpvnv.com2.z0.glb.qiniucdn.com/538f26f0-6f3e-48d5-91e6-5b5bb730dd19.png) 0 0 no-repeat;
   display:inline-block;
