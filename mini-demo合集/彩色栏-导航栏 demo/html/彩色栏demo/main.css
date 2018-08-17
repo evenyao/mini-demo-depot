@@ -1,0 +1,46 @@
+.layout {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.layout>div {
+  margin-top: 30px;
+}
+
+.alert {
+  color: #fff;
+  padding: 1px 16px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+.alert .close {
+  text-decoration: none;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  /* 继承父类的字体颜色 */
+  color: inherit;
+}
+
+.alert>h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.alert.success {
+  background-color: #4CAF50;
+}
+
+.alert.info {
+  background-color: #2196F3;
+}
+
+.alert.danger {
+  background-color: #f44336;
+}
+
+.alert.bad {
+  background-color: #ff9800;
+}

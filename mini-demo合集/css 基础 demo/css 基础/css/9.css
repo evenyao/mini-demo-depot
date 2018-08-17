@@ -1,0 +1,59 @@
+body {
+  font-family: arial;
+}
+
+/* 定义大体的框架，并设置居中 */
+.layout {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* 定义各个talbe之间的margin，使用margin-top */
+.layout > table {
+  margin-top: 30px;
+}
+
+/* 定义整个table的大致样式 */
+.table {
+  /* collapse相邻边框合并 */
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+/* 定义table中tr的样式 */
+.table tr {
+  border-bottom: 1px solid #ddd;
+  /* tr内容往左边对齐 */
+  text-align: left;
+}
+
+/* 定义table中tr的背景色；偶数子元素背景色，因为从th算起，所以是偶数*/
+.table tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+/* 定义table中th的样式 */
+.table th {
+  color: #fff;
+  background-color: #4CAF50;
+  padding: 8px 8px;
+  font-weight: bold;
+}
+
+/* 定义table中td的样式 */
+.table td {
+  padding: 8px 8px;
+}
+
+/* 去除talbe v2的边框border */
+.table.v2 {
+  border: none;
+}
+
+/* 再重新定义table v2中th的背景色和字体颜色 */
+.table.v2 th {
+  background-color: #fff;
+  color: #000;
+}

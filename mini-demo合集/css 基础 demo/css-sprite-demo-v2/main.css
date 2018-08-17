@@ -1,0 +1,56 @@
+﻿body {
+  font-family: arial;
+}
+
+.Sprites {
+  margin:0 auto;
+  border:1px solid #ccc;
+  width:300px;
+  padding:10px;
+
+}
+
+.Sprites li {
+  padding: 5px;
+  height:16px;
+  font-size:16px;
+  line-height:16px;
+  text-align:left;
+  overflow:hidden;
+}
+
+/* 给span设置css背景图片 通过icon的拼接制作而成 */
+.Sprites li span {
+  float:left;
+  width:16px;
+  height:16px;
+  overflow:hidden;
+  background:url(img.png) no-repeat;
+}
+
+.Sprites li a {
+  color:#000;
+  text-decoration: none;
+  padding-left:5px;
+}
+
+/* 再分别对不同span class设置对于图标背景定位具体值 具体的backgroud-position值通过css sprite制作工具获得*/
+.Sprites li .a1 {
+   background-position:0 0;
+ }
+
+.Sprites li .a2 {
+  background-position:0 -16px;
+}
+
+.Sprites li .a3 {
+  background-position:0 -64px;
+}
+
+.Sprites li .a4 {
+  background-position:0 -80px;
+}
+
+.Sprites li .a5 {
+  background-position:0 -32px;
+}

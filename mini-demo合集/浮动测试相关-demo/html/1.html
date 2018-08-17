@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>浮动盒问题</title>
+</head>
+<body>
+  <div class="ct">
+    <div class="box box1">1</div>
+    <p>挨到包含块边沿或者另一个浮动盒的边沿。如果存在行盒，浮动盒的外top会与当前行盒的top边对齐，如果没有足够的水平控件来浮动，它会向下滑动，直到空间合适或者不再出现其他浮动。</p>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+  </div>
+
+  <style media="screen">
+    p {
+      background: yellow;
+    }
+
+    .ct {
+      width: 280px;
+      height: 300px;
+      border: 1px solid;
+      margin: 100px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background: red;
+      float: left;
+    }
+
+    .box1 {
+      background: blue;
+      height: 120px;
+      opacity: 0.2;
+    }
+
+    .box2 {
+      background: pink;
+    }
+  </style>
+
+</body>
+</html>

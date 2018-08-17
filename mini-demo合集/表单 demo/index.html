@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title> 表单demo </title>
+</head>
+<body>
+
+  <div class="login">
+
+    <form action="unfounde" method="get">
+
+
+      <!-- login输入账户名div块 -->
+      <div class="username">
+        <label for="username">姓名</label>
+        <input id="username" type="text" name="username" placeholder="用户名">
+      </div>
+
+      <!-- login输入密码div块 -->
+      <div class="password">
+        <label for="password">密码</label>
+        <input id="password" type="password" name="password" placeholder="密码">
+      </div>
+
+      <!-- 性别单选表单div块 -->
+      <div class="sex">
+        <label>性别：</label>
+        <input type="radio" name="sex" value="男"> 男
+        <input type="radio" name="sex" value="女"> 女
+      </div>
+
+      <!-- 取向单选表单div块 -->
+      <div class="quxiang">
+        <label>取向：</label>
+        <input type="radio" name="sexquxiang" value="男"> 男
+        <input type="radio" name="sexquxiang" value="女"> 女
+      </div>
+
+      <!-- 爱好多选表单div块 -->
+      <div class="hobby">
+        <label>爱好：</label>
+        <input type="checkbox" name="hobby" value="dota"> dota
+        <input type="checkbox" name="hobby" value="travel"> 旅游
+        <input type="checkbox" name="hobby" value="dog"> 宠物
+      </div>
+
+
+      <!-- 评论文本输入区域表单div块 -->
+      <div class="textarea">
+        <label>评论：</label>
+        <textarea name="article" rows="8" cols="80" placeholder="ddd">
+        </textarea>
+      </div>
+
+      <!-- 我的car 下拉选择表单div块 -->
+      <div class="select">
+        <label>我的car：</label>
+        <select name="mycar">
+          <option value="defalut" selected>萨博</option>
+          <option value="xiandai">现代</option>
+          <option value="dazong">大众</option>
+          <option value="BMW">BMW</option>
+        </select>
+        <button>提交</button>
+      </div>
+
+
+    </form>
+
+  </div>
+  今天的心情：<input type="checkbox">
+</body>
+</html>

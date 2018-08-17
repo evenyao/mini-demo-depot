@@ -1,0 +1,89 @@
+/* 去掉各类标签的默认边缘样式margin和padding */
+body ,h1 ,h2 ,h3 ,h4 ,h5 ,h6 ,ul ,li, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 去掉a连接下划线 */
+a {
+  text-decoration: none;
+}
+
+/* 去掉列表的· */
+ul {
+  list-style: none;
+}
+
+body {
+  font: 14px/1.4 Arial;
+  background-color: #fff2e3;
+  /* 行内元素居中 */
+  text-align: center;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 4px 6px;
+  color: #fff;
+  background-color: #72b890;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.button:active {
+  opacity: 1;
+}
+
+.up {
+  margin-bottom: 20px;
+}
+
+.down {
+  margin-top: 20px;
+}
+
+
+.title {
+  color: #888D91;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.description {
+  color: #888D91;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.more,
+.tab {
+  margin-top: 30px;
+}
+
+.more > li,
+.tab > li {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.work-img {
+  margin-top: 40px;
+}
+
+.footer {
+  margin-top: 90px;
+}
+
+.footer p {
+  margin-bottom: 5px;
+}
+
+.footer a {
+  color: #72b890;
+  margin: 3px;
+}

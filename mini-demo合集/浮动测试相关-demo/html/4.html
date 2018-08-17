@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>右浮动导航条 DOM顺序不变</title>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#">1首页</a></li>
+      <li><a href="#">2产品</a></li>
+      <li><a href="#">3服务</a></li>
+      <li><a href="#">4关于</a></li>
+    </ul>
+  </div>
+
+  <style>
+  .navbar>ul {
+    float: right;
+    list-style: none;
+  }
+
+  .navbar>ul>li {
+    float: left;
+    margin-left: 15px;
+  }
+
+  </style>
+</body>
+</html>

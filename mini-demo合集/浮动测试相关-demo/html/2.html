@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>三栏布局 内容区自适应问题</title>
+</head>
+<body>
+  <div class="menu">侧边栏固定宽度</div>
+  <div class="aside">侧边栏固定宽度</div>
+  <div class="main">内容区块自适应宽度</div>
+  <!-- 一定要注意div书写的顺序，要将class为main的主内容区块放到最后，不然就会产生排版错乱，即右侧的边栏会移到下方 -->
+
+  <style>
+  .aside {
+    width: 150px;
+    height: 400px;
+    background: grey;
+    float: right;
+  }
+
+  .menu {
+    width: 150px;
+    height: 400px;
+    background: grey;
+    float: left;
+  }
+
+  .main {
+    margin-right: 160px;
+    margin-left: 160px;
+    background: pink;
+    height: 400px;
+  }
+  </style>
+
+</body>
+</html>

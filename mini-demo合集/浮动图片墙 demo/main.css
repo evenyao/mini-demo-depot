@@ -1,0 +1,49 @@
+ul ，
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.layout h1 {
+  color: #666;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.all-card {
+  margin-left: -50px;
+}
+
+.card {
+  width: 260px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+}
+
+
+.all-card::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.all-card .card {
+  margin-left: 10px;
+  margin-top: 30px;
+  list-style: none;
+  float: left;
+}
+
+.card>img {
+  width: 100%;
+  opacity: 0.75;
+}
+
+p {
+  text-align: center;
+}
